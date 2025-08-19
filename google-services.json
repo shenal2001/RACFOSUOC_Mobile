@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "769045625267",
+    "project_id": "rota01-91a23",
+    "storage_bucket": "rota01-91a23.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:769045625267:android:27f25c57a74cd7eb0573c6",
+        "android_client_info": {
+          "package_name": "com.example.rota1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYE892CByOOcqN4rGHFTP7V0nhphS2StE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
