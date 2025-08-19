@@ -1,0 +1,101 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/login2"
+    tools:context=".Logging">
+
+    <!-- Main Container with RelativeLayout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <!-- Centered email and password fields -->
+        <LinearLayout
+            android:id="@+id/credentials_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_centerInParent="true">
+
+            <!-- Email Input Field -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:textColorHint="@android:color/darker_gray">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/email"
+                    android:hint="@string/email"
+                    android:textColor="@android:color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Password Input Field -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:textColorHint="@android:color/darker_gray">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/password"
+                    android:hint="@string/password"
+                    android:textColor="@android:color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <!-- Login button and register text at the bottom -->
+        <LinearLayout
+            android:id="@+id/bottom_buttons_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="120dp"> <!-- Adjust this value to change the distance from the bottom -->
+
+            <!-- Login Button -->
+            <Button
+                android:id="@+id/login_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:text="@string/login"
+                android:textColor="@android:color/black"
+                android:padding="16dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center"/>
+
+            <!-- Register Text -->
+            <TextView
+                android:id="@+id/registerNow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/click_to_register"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:gravity="center"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!-- Optional ProgressBar -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center"/>
+
+</FrameLayout>
